@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qoisa - Quiz</title>
+
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="assets/dist/framework/bootstrap/css/bootstrap.min.css"
+    />
+
+    <!-- Theme Files -->
+    <link rel="stylesheet" href="assets/dist/theme/css/color.css" />
+    <link rel="stylesheet" href="assets/dist/theme/css/theme.css" />
+    <link rel="stylesheet" href="assets/dist/theme/css/responsive.css" />
+    <link rel="stylesheet" href="assets/dist/theme/css/animation.css" />
+  </head>
+  <body>
+    <main class="overflow-hidden">
+      <header>
+        <a href="#" class="helpLine text-decoration-none">
+          <i class="fa-solid fa-square-phone-flip"></i>
+          <article>
+            <strong>need help?</strong>
+            <p>Call an Expert +93892384</p>
+          </article>
+        </a>
+
+        <div class="socialIcons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </header>
+      <div class="container">
+        <form id="steps" novalidate onsubmit="return false">
+          <div class="logo">
+            <img src="assets/images/icon.png" alt="Icon" /> Qoisa
+          </div>
+          <fieldset id="step1">
+            <h1 class="mainHeading">
+              What Programming Language do You use During the Coding interview?
+            </h1>
+
+            <div
+              class="d-flex justify-content-center gap-2 mt-5 options flex-wrap"
+            >
+              <div class="radioField">
+                <input type="radio" value="Python" name="op1" />
+                <label>Python</label>
+              </div>
+              <div class="radioField">
+                <input type="radio" value="JavaScript" name="op1" />
+                <label>JavaScript</label>
+              </div>
+              <div class="radioField">
+                <input type="radio" value="Go" name="op1" />
+                <label>Go</label>
+              </div>
+              <div class="radioField">
+                <input type="radio" value="React js" name="op1" />
+                <label>React js</label>
+              </div>
+            </div>
+            <!-- <button class="wirzaBtn mt-5">
+              Submit Request<i class="fa-solid fa-arrow-up"></i>
+            </button> -->
+          </fieldset>
+          <div class="result mt-5"></div>
+        </form>
+      </div>
+    </main>
+
+    <!-- jQuery -->
+    <script src="assets/dist/lib/jQuery/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/dist/framework/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Theme Files -->
+    <script src="assets/dist/theme/js/custom.js"></script>
+
+    <div class="cursor"></div>
+  </body>
+</html>
