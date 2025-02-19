@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap");
+
+body {
+  font-family: "Urbanist";
+  width: 100%;
+  height: auto;
+}
+.cursor {
+  width: 50px;
+  height: 50px;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  position: absolute;
+  pointer-events: none;
+  opacity: 1;
+  transition: var(--transitions);
+  top: -25px;
+  left: -25px;
+  z-index: 10;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../../../images/bg.jpg);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 55px 50px;
+  z-index: 3;
+  
+}
+.helpLine {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.helpLine article {
+  font-size: 17px;
+  color: var(--heading-colorDark);
+  text-transform: capitalize;
+}
+.helpLine i {
+  font-size: 38px;
+  color: var(--heading-colorDark);
+}
+.helpLine p {
+  margin-bottom: 0 !important;
+}
+.socialIcons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.socialIcons a {
+  font-size: 18px;
+  color: rgb(47, 49, 70);
+  text-decoration: none;
+  border: solid 1px var(--heading-colorDark);
+  border-radius: 50%;
+  background-color: transparent;
+  width: 49px;
+  height: 49px;
+  display: grid;
+  place-content: center;
+  transition: var(--transitions);
+}
+.socialIcons a:hover {
+  background-color: var(--primary-color);
+  border-color: transparent;
+}
+.logo {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  color: var(--heading-colorDark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.logo img {
+  width: 18px;
+}
+.wirzaBtn {
+  height: 75px;
+  padding: 0 45px;
+  background-color: var(--primary-color);
+  color: var(--heading-colorDark);
+  border-radius: 37px;
+  font-size: 20px;
+  font-weight: 800;
+  border: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.wirzaBtn i {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+#steps {
+  width: 100%;
+  height: auto;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px rgb(0, 0, 0);
+  border-radius: 354px;
+  background-color: rgb(255, 255, 255);
+}
+.mainHeading {
+  font-size: 50px;
+  color: rgb(24, 24, 24);
+  text-align: center;
+  font-weight: 900;
+}
+.radioField {
+  height: 80px;
+  padding: 0 50px 0 35px;
+  border-radius: 40px;
+  border: solid 2px rgb(27, 27, 27);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 20px;
+}
+.radioField label {
+  font-size: 25px;
+  color: rgb(27, 27, 27);
+  font-weight: bold;
+}
+.radioField input {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgb(27, 27, 27);
+  position: relative;
+  cursor: pointer;
+}
+.radioField input::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 100%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.radioField input:checked::before {
+  content: "";
+  background-image: url(../../../images/locading.gif);
+  background-size: cover;
+  width: 75%;
+  height: 75%;
+}
+.result {
+  width: 100%;
+}
+.option {
+  background-color: rgb(24, 24, 24);
+  width: 60%;
+  margin: 0 auto;
+  height: 43px;
+  border-radius: 22px;
+  padding: 0 35px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.option.checked {
+  background-color: var(--primary-color);
+  color: var(--heading-colorDark);
+}
+.option i {
+  display: none;
+}
+.option.checked i {
+  margin-right: 10px;
+  display: inline;
+}

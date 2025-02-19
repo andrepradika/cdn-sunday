@@ -1,0 +1,8 @@
+:root {
+  --primary-color: rgb(156, 238, 105);
+  --secondary-color: rgb(101, 106, 229);
+  --heading-color: rgb(255, 255, 255);
+  --heading-colorDark: rgb(0, 0, 0);
+  --text-color: rgb(210, 210, 210);
+  --transitions: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
